@@ -1,0 +1,4 @@
+spring:
+  main:
+    # 服务启动不占用端口
+    web-application-type: none

@@ -8,7 +8,6 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
@@ -17,7 +16,6 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.Optional;
 
-@Slf4j
 @SpringBootApplication
 public class OverShellApplication extends AbstractJavaFxApplicationSupport {
 

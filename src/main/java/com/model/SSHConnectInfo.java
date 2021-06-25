@@ -3,7 +3,7 @@ package com.model;
 import com.jcraft.jsch.Channel;
 import com.jcraft.jsch.JSch;
 import lombok.Data;
-import org.springframework.web.reactive.socket.WebSocketSession;
+import org.springframework.web.socket.WebSocketSession;
 
 /**
  * @author Q版小李

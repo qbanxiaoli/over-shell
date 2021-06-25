@@ -12,7 +12,7 @@ import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.stereotype.Service;
-import org.springframework.web.reactive.socket.WebSocketSession;
+import org.springframework.web.socket.WebSocketSession;
 
 import java.io.IOException;
 import java.io.InputStream;

@@ -7,6 +7,7 @@ import de.felixroske.jfxsupport.FXMLView;
 import javafx.geometry.Insets;
 import javafx.scene.Parent;
 import javafx.scene.control.TreeView;
+import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 
@@ -25,7 +26,12 @@ public class TerminalView extends AbstractFxmlView {
         root.setPadding(new Insets(0, 0, 0, 0));
         TreeView<String> treeView = treeService.getDictionaryTree();
         // 为treeView注册鼠标点击事件
-        treeView.addEventHandler(MouseEvent.MOUSE_CLICKED, clickEvent.eventHandler(root));
+        treeView.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> {
+            // 鼠标左键双击事件
+            if (event.getClickCount() == 2 && event.getButton().name().equals(MouseButton.PRIMARY.name())) {
+                clickEvent.eventHandler(root);
+            }
+        });
         root.setLeft(treeView);
         borderPane = root;
     }
